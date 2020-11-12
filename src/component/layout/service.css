@@ -1,0 +1,158 @@
+.ser-container{
+    margin-top: 85px;
+    width: 100%;
+}
+
+.ser-col{
+    position: relative;
+}
+
+.ser-banner{
+    height: 280px;
+    background-size: initial !important;
+    background-position: initial !important;
+}
+
+.ser-fullscreen{
+    height: 360px !important;
+}
+
+
+.tripStatusWrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* height: 450px; */
+    padding: 20px 30px 30px;
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+}
+
+/* .ruleForm{
+    width: 850px;
+    padding: 20px 30px 0;
+} */
+
+.noDataForm{
+    width: 800px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    height: 400px;
+    padding: 100px 50px 100px 50px;
+}
+
+.ruleForm{
+    width: 400px;
+    padding: 20px 30px 0;
+}
+
+.ruleLabel{
+    text-align: left;
+    font-size: medium;    
+}
+
+.triggerLabel{
+    text-align: left;
+    font-weight: bold;
+}
+
+/* .tripStatusWrap ul, .tripStatusWrap ul li {
+    display: flex;
+} */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* .tripStatusWrap ul, .tripStatusWrap ul li {
+    display: flex;
+} */
+*, ::after, ::before {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.tripStatusWrap ul li a {
+    margin-right: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.makeFlex {
+    display: flex;
+}
+
+.cm__myTripSprt {
+    background-image: url(https://imgak.mmtcdn.com/mima/images/Desktop/mytripSprite.png);
+    background-size: 700px 850px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.cm__myTripSprt--tabUpcoming {
+    width: 27px;
+    height: 27px;
+    background-position: -1px -28px;
+}
+
+.tripStatusWrap ul li .tripStatusWrap__statusText {
+    display: flex;
+    flex-direction: column;
+}
+
+.tripStatusWrap .txtFild {
+    margin-right: auto;
+    margin-bottom: auto;
+    width: auto; 
+    /* height: auto; */
+    /* align-self: flex-start;*/
+}
+
+.tripStatusWrap .txtFild-button{
+     margin-left: auto;
+     width: auto;
+     align-self: flex-start;
+}
+
+.txtFild__fieldContanr {
+    position: relative;
+    margin-right: 20px;
+}
+
+.txtFild__fieldContanr--search .txtFild__inputFld {
+    padding-left: 44px;
+}
+.txtFild__inputFld {
+    border-radius: 4px;
+    border: 1px solid #9b9b9b;
+    background-color: #fff;
+    width: 100%;
+    padding: 11px 10px;
+        padding-left: 10px;
+    outline: 0;
+    color: #4a4a4a;
+}
+.font14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.txtFild__fieldContanr .cm__myTripSprtFlight--search {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    opacity: .7;
+    pointer-events: none;
+}
+.cm__myTripSprt {
+    background-image: url(https://imgak.mmtcdn.com/mima/images/Desktop/mytripSprite.png);
+    background-size: 700px 850px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-shrink: 0;
+}

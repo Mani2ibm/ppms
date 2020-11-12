@@ -1,0 +1,54 @@
+{
+  "user": [
+    {
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "username": "test",
+      "password": "test"
+    }
+  ],
+  "rule": [
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule desc",
+        "citycode": "1234",
+        "queueno": "1234",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "1234"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "1234"
+      },
+      "id": 1
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule2",
+        "ruledesc": "rule desc",
+        "citycode": "123112",
+        "queueno": "2131",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "1231"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "123"
+      },
+      "id": 2
+    }
+  ]
+}
