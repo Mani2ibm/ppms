@@ -21,23 +21,23 @@ class Service extends Component {
     }
 
     onChange = (event) => {
-      var cellDate = event.currentTarget.getAttribute('data-cy');
-      if(cellDate === "rulename"){
+      var cellData = event.currentTarget.getAttribute('data-cy');
+      if(cellData === "rulename"){
         this.setState({
           rulename: event.target.value,
         });
       } 
-      if(cellDate === "ruledesc"){
+      if(cellData === "ruledesc"){
         this.setState({
           ruledesc: event.target.value,
         });
       }
-      if(cellDate === "citycode"){
+      if(cellData === "citycode"){
         this.setState({
           citycode: event.target.value,
         });
       }
-      if(cellDate === "queueno"){
+      if(cellData === "queueno"){
         this.setState({
           queueno: event.target.value,
         });

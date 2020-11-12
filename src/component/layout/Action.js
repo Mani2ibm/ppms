@@ -20,6 +20,15 @@ class Action extends Component {
     };
   }
 
+  componentDidMount(){
+    if(Object.keys(this.props.ruleCreation.creation).length > 0){
+      const actionType = this.props.ruleCreation.action.actionType;
+      const remarkType = this.props.ruleCreation.action.remarkType;
+      const remarkDetail = this.props.ruleCreation.action.remarkDetail;
+      this.setState({value:actionType,ruledesc:remarkType,remarkValue:remarkDetail})
+    }
+  }
+
   handleChange(event) {
     let value = event.target.value;
     if (value === "Move to Queue") {
@@ -237,7 +246,7 @@ class Action extends Component {
                               <Button variant="primary" type="submit">
                                 Submit
                               </Button>
-                              {this.state.popup ? <PopUp toggle={this.togglePop} rulename={this.props.ruleCreation.creation.rulename} /> : null}
+                              {this.state.popup ? <PopUp toggle={this.togglePop} rulestatus="created" /> : null}
                             </Form.Row>
                           </Form.Group>
                         </Form>

@@ -31,26 +31,6 @@
       "id": 1
     },
     {
-      "user": "admin",
-      "creation": {
-        "rulename": "rule2",
-        "ruledesc": "rule desc",
-        "citycode": "123112",
-        "queueno": "2131",
-        "airSegmnet": "on"
-      },
-      "trigger": {
-        "triggerType": "PNR number",
-        "comparatorType": "Equal to",
-        "value": "1231"
-      },
-      "action": {
-        "actionType": "Move to Queue",
-        "targetQueue": "123"
-      },
-      "id": 2
-    },
-    {
       "user": "test",
       "creation": {
         "rulename": "rule1",
@@ -69,6 +49,27 @@
         "targetQueue": "1231"
       },
       "id": 3
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule3",
+        "ruledesc": "rule des",
+        "citycode": "21321",
+        "queueno": "214321",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "Number of segments",
+        "comparatorType": "Equal to",
+        "value": "1323"
+      },
+      "action": {
+        "actionType": "Add Remarks",
+        "remarkType": "notepad",
+        "remarkDetail": "remarks"
+      },
+      "id": 4
     }
   ]
 }

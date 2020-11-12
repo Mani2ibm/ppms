@@ -13,6 +13,8 @@ class Trigger extends Component {
       value: "",
       comparatorValue: "",
       type: "",
+      triggervalue:"",
+      RangeValue:"",
       comparator: [
         "Equal to",
         "Different from",
@@ -24,6 +26,16 @@ class Trigger extends Component {
       showValue: false,
       showInRangeValue: false,
     };
+  }
+
+  componentDidMount(){
+    if(Object.keys(this.props.ruleCreation.creation).length > 0){
+      const triggerType = this.props.ruleCreation.trigger.triggerType;
+      const comparatorType = this.props.ruleCreation.trigger.comparatorType;
+      const value = this.props.ruleCreation.trigger.value;
+      const RangeValue = this.props.ruleCreation.trigger.RangeValue;
+      this.setState({value:triggerType,comparatorValue:comparatorType,triggervalue:value,RangeValue:RangeValue})
+    }
   }
 
   handleChange(event) {
@@ -200,6 +212,7 @@ class Trigger extends Component {
                                 <Col>
                                   <Form.Control
                                     name="value"
+                                    value={this.state.triggervalue}
                                     type={this.state.type}
                                     placeholder={this.state.value}
                                     required
@@ -217,6 +230,7 @@ class Trigger extends Component {
                                   <Form.Control
                                     name="RangeValue"
                                     type={this.state.type}
+                                    value={this.state.RangeValue}
                                     placeholder={this.state.value}
                                     required
                                   />
@@ -253,11 +267,14 @@ Trigger.propTypes = {
   saveTriggerDetails: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   error: PropTypes.object.isRequired,
+  ruleCreation: PropTypes.object.isRequired,
+
 }
 
 const mapStateToProps = (state) => ({
   auth: state.auth,
   error: state.error,
+  ruleCreation: state.ruleCreation,
 });
 
 export default connect(mapStateToProps, {saveTriggerDetails})(Trigger);

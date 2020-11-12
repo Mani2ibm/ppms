@@ -8,12 +8,12 @@ class PopUp extends Component {
   };
 
   render() {
-    const rulename = this.props.rulename
-    console.log("popup", rulename);
+    const rulestatus = this.props.rulestatus
+    console.log("popup", rulestatus);
     return (
       <>
       <Modal show={true} onHide={this.handleClick} centered>
-    <Modal.Body>Sucessfully created {this.rulename} rule!</Modal.Body>
+    <Modal.Body>Sucessfully {rulestatus} rule!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.handleClick}>
             Ok

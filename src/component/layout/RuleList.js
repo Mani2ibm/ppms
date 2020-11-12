@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./service.css";
-import "./RuleList.css";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Form, Col, Button } from "react-bootstrap";
@@ -208,7 +207,7 @@ class RuleList extends Component {
                                 </Button>
                               </Col>                              
                               {this.state.popup ? (
-                                <PopUp toggle={this.togglePop} />
+                                <PopUp toggle={this.togglePop} rulestatus="deleted" />
                               ) : null}
                             </Form.Row>
                           </Form.Group>
