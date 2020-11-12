@@ -13,17 +13,35 @@ class Service extends Component {
         this.state = {
             name:"",
             isChecked: false,
-            // rulename:"",
-            // ruledesc:"",
-            // citycode:"",
-            // queueno:""
+            rulename:"",
+            ruledesc:"",
+            citycode:"",
+            queueno:""
         }
     }
 
-    toggleChange = () => {
-      this.setState({
-        isChecked: !this.state.isChecked,
-      });
+    onChange = (event) => {
+      var cellDate = event.currentTarget.getAttribute('data-cy');
+      if(cellDate === "rulename"){
+        this.setState({
+          rulename: event.target.value,
+        });
+      } 
+      if(cellDate === "ruledesc"){
+        this.setState({
+          ruledesc: event.target.value,
+        });
+      }
+      if(cellDate === "citycode"){
+        this.setState({
+          citycode: event.target.value,
+        });
+      }
+      if(cellDate === "queueno"){
+        this.setState({
+          queueno: event.target.value,
+        });
+      }       
     }
 
     componentDidMount(){
@@ -73,6 +91,8 @@ class Service extends Component {
                               type="name"
                               name= "rulename"
                               value={this.state.rulename}
+                              onChange={this.onChange.bind(this)}
+                              data-cy = "rulename"
                               placeholder="Enter Rule name"
                               required
                             />
@@ -86,6 +106,8 @@ class Service extends Component {
                             rows="3"
                             name= "ruledesc"
                             value={this.state.ruledesc}
+                            onChange={this.onChange.bind(this)}
+                              data-cy = "ruledesc"
                             placeholder="Enter Rule description"
                             required
                           />
@@ -98,6 +120,8 @@ class Service extends Component {
                               type="number"
                               name= "citycode"
                               value={this.state.citycode}
+                              onChange={this.onChange.bind(this)}
+                              data-cy = "citycode"
                               placeholder="Enter Pseudo city code"
                               required
                             />
@@ -109,7 +133,9 @@ class Service extends Component {
                               type="number"
                               name= "queueno"
                               value={this.state.queueno}
-                              placeholder="Enter Queue Number "
+                              onChange={this.onChange.bind(this)}
+                              data-cy = "queueno"
+                              placeholder="Enter Queue Number"
                               required
                             />
                           </Form.Group>

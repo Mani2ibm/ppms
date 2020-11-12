@@ -29,8 +29,8 @@ function App() {
           <Header />
           <Route exact path="/home" component={Home} />
           <div className="container login">
-            <Route exact path="/Login" component={Login} /> 
-            <Redirect from="/" to="/Login" exact />
+            <Route exact path="/login" component={Login} /> 
+            <Redirect from="/" to="/login" exact />
             <Route exact path="/rule/create" component={Service} />
             <Route exact path="/rule/trigger" component={Trigger} />
             <Route exact path="/rule/action" component={Action} />
@@ -41,6 +41,11 @@ function App() {
       </Router>
     </Provider>
   );
+}
+
+// expose store when run in Cypress
+if (window.Cypress) {
+  window.store = store
 }
 
 export default App;

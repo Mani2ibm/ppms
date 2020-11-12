@@ -3,6 +3,7 @@ import {
   SET_TRIGGER_DETAIL,
   SET_USER_DETAIL,
   REMOVE_DETAILS,
+  SET_ALL_RULE_DETAIL
 } from "../actions/types";
 
 const initialState = {
@@ -36,6 +37,14 @@ export default function (state = initialState, action) {
         creation: {},
         trigger: {},
         action: {},
+      };
+      case SET_ALL_RULE_DETAIL:
+      return {
+        ...state,
+        user: action.payload,
+        creation: action.creation,
+        trigger: action.trigger,
+        action: action.action,
       };
     default:
       return state;

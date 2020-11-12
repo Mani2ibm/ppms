@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./service.css";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { saveRuleDetails } from '../../actions/ruleCreation'
+import { saveRuleAllDetails } from '../../actions/ruleCreation'
 import { Form, Col, Button } from "react-bootstrap";
 import axios from "axios";
 
@@ -44,11 +44,11 @@ class RuleEdit extends Component {
     const ruleDetail = data.filter((rule) => rule.creation.rulename === value);
     this.setState({ value: value, ruleDetail: ruleDetail[0] });
     console.log("logs...", ruleDetail[0]);
-    this.props.saveRuleDetails(this.state.ruleDetail.creation);
   }
 
   editRuleHandler = (event) => {
     event.preventDefault();
+    this.props.saveRuleAllDetails(this.state.ruleDetail);
     this.props.history.push("/rule/create");
   };
 
@@ -114,7 +114,7 @@ class RuleEdit extends Component {
 }
 
 RuleEdit.propTypes = {
-  saveRuleDetails: PropTypes.func.isRequired,
+  saveRuleAllDetails: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   error: PropTypes.object.isRequired,
 };
@@ -124,4 +124,4 @@ const mapStateToProps = (state) => ({
   error: state.error,
 });
 
-export default connect(mapStateToProps, {saveRuleDetails})(RuleEdit);
+export default connect(mapStateToProps, {saveRuleAllDetails})(RuleEdit);

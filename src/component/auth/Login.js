@@ -111,7 +111,7 @@ class Login extends Component {
 						    </span>
 
                             <div className={`wrap-input100 validate-input m-b-10 ${this.state.userState ? "alert-validate" : ''}`} data-validate="Username is required">
-                                <input className="input100" type="text" name="username" value={this.state.username} placeholder="Username" onChange={this.myChangeHandler}></input>
+                                <input className="input100 log" type="text" name="username" value={this.state.username} placeholder="Username" onChange={this.myChangeHandler}></input>
                                 <span className="focus-input100"></span>
                                 <span className="symbol-input100">
                                     <FontAwesomeIcon icon={faUser} />
@@ -119,7 +119,7 @@ class Login extends Component {
                             </div>
 
                             <div className={`wrap-input100 validate-input m-b-10 ${this.state.passState ? "alert-validate" : ''}`} data-validate="Password is required">
-                                <input className="input100" type="password" name="pass" value={this.state.pass} placeholder="Password" onChange={this.myChangeHandler}></input>
+                                <input className="input100 pass" type="password" name="pass" value={this.state.pass} placeholder="Password" onChange={this.myChangeHandler}></input>
                                 <span className="focus-input100"></span>
                                 <span className="symbol-input100">
                                     <FontAwesomeIcon icon={faLock} />

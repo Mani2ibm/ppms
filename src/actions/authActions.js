@@ -19,7 +19,7 @@ export const loginUser= (userData) => dispatch => {
             else{
                 dispatch({
                     type : GET_ERRORS,
-                    payload : "User not present"
+                    payload : "Password is wrong"
                 }) 
             }
         })
