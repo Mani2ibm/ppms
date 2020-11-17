@@ -147,6 +147,7 @@ class Action extends Component {
                                   <Form.Control
                                     name="targetQueue"
                                     type="number"
+                                    placeholder="Enter Queue No"
                                     required
                                   />
                                 </Col>

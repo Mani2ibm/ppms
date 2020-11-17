@@ -166,11 +166,11 @@ class Trigger extends Component {
                                   onChange={this.handleChange.bind(this)}                                  
                                 >
                                   <option>select the rule trigger type</option>
-                                  <option>PNR number</option>
-                                  <option>Number of segments</option>
-                                  <option>Departure Date</option>
-                                  <option>Arrival Date</option>
-                                  <option>Remarks</option>
+                                  <option value="PNR number">PNR number</option>
+                                  <option value="Number of Segments">Number of Segments</option>
+                                  <option value="Departure Date">Departure Date</option>
+                                  <option value="Arrival Date">Arrival Date</option>
+                                  <option value="Remarks">Remarks</option>
                                 </Form.Control>
                               </Col>
                             </Form.Row>
@@ -193,7 +193,7 @@ class Trigger extends Component {
                                     </option>
                                     {this.state.comparator.map(
                                       (comparatorOption) => (
-                                        <option>{comparatorOption}</option>
+                                        <option value={comparatorOption}>{comparatorOption}</option>
                                       )
                                     )}
                                   </Form.Control>

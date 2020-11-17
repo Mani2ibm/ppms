@@ -70,6 +70,266 @@
         "remarkDetail": "remarks"
       },
       "id": 4
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 5
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 6
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 7
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 8
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 9
+    },
+    {
+      "user": "test",
+      "creation": {
+        "rulename": "rule2",
+        "ruledesc": "rule desc",
+        "citycode": "123123",
+        "queueno": "12312",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "123123"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "1213"
+      },
+      "id": 10
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 11
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 12
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 13
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 14
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 15
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 16
+    },
+    {
+      "user": "admin",
+      "creation": {
+        "rulename": "rule1",
+        "ruledesc": "rule description test",
+        "citycode": "1234",
+        "queueno": "3214",
+        "airSegmnet": "on"
+      },
+      "trigger": {
+        "triggerType": "PNR number",
+        "comparatorType": "Equal to",
+        "value": "2314"
+      },
+      "action": {
+        "actionType": "Move to Queue",
+        "targetQueue": "3214"
+      },
+      "id": 17
     }
   ]
 }

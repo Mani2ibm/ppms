@@ -24,7 +24,8 @@ context('Rule Creation Test', () => {
         const rulename = 'rule1'
         const ruleDesc = 'rule description test'
         const citycode = '1234'
-        const queueNo = "3214"    
+        const queueNo = "3214"
+        const pnr = "2314"
 
         cy.get("input[placeholder='Enter Rule name']")
             .type(rulename)
@@ -56,7 +57,36 @@ context('Rule Creation Test', () => {
         cy.window().its('store').invoke('getState').its('ruleCreation.creation.queueno').should('eq','3214')
 
         cy.window().its('store').invoke('getState').its('ruleCreation.creation.airSegmnet').should('eq','on')
-        
+
+        cy.get('select').eq(0).select('PNR number').should('have.value', 'PNR number')
+
+        cy.get('select').eq(1).select('Equal to').should('have.value', 'Equal to')
+
+        cy.get("input[placeholder='PNR number']")
+            .type(pnr)
+            .should('have.value',pnr)
+
+        cy.get('.btn-primary')
+            .click()
+
+        cy.window().its('store').invoke('getState').its('ruleCreation.trigger.triggerType').should('eq', 'PNR number')
+
+        cy.window().its('store').invoke('getState').its('ruleCreation.trigger.comparatorType').should('eq', 'Equal to')
+
+        cy.window().its('store').invoke('getState').its('ruleCreation.trigger.value').should('eq','2314')
+
+        cy.get('select').eq(0).select('Move to Queue').should('have.value', 'Move to Queue')
+
+        cy.get("input[placeholder='Enter Queue No']")
+            .type(queueNo)
+            .should('have.value',queueNo)
+            
+        cy.get('.btn-primary')
+            .click()
+    
+        cy.get('.btn-secondary').click({force: true})
+
+        cy.url().should('include', '/rule/list')
     })
 
   })
